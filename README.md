@@ -3,17 +3,17 @@ all Methods are static type
 
 ## StringUtil
 
-#### LPAD
-- String lpad(int num, int size)
-- String lpad(String val, int size)
-- String lpad(int num, int size, String fillChar)
-- String lpad(String val, int size, String fillChar)
+> * LPAD
+>   - String lpad(int num, int size)
+> - String lpad(String val, int size)
+> - String lpad(int num, int size, String fillChar)
+> - String lpad(String val, int size, String fillChar)
 
-##### RPAD
-- String rpad(int num, int size)
-- String rpad(String val, int size)
-- String rpad(int num, int size, String fillChar)
-- String rpad(String val, int size, String fillChar)
+> ##### RPAD
+> - String rpad(int num, int size)
+> - String rpad(String val, int size)
+> - String rpad(int num, int size, String fillChar)
+> - String rpad(String val, int size, String fillChar)
 
 ## TypeUtil
 - String toString(int num)
