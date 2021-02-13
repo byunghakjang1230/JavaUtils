@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<groupId>jbh1230</groupId>
+<artifactId>jbh-util</artifactId>
+<packaging>jar</packaging>
+<version>0.0.1-SNAPSHOT</version>
+
+<repositories>
+	<repository>
+		<id>localrepository</id>
+		<url>file://${project.basedir}/lib</url>
+	</repository>
+</repositories>
+
+<properties>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
+
+<build>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.6.1</version>
+			<configuration>
+				<source>1.8</source>
+				<target>1.8</target>
+			</configuration>
+		</plugin>
+
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-assembly-plugin</artifactId>
+			<version>2.5.1</version>
+
+			<configuration>
+
+				<finalName>jbh-util</finalName>
+				<outputDirectory>/Users/byunghakjang/Desktop/Developer/000_JAVA/jar</outputDirectory>
+				<!-- 				
+				<archive>
+					<manifest>
+						추후 메인클래스는 변경예정
+						<mainClass>com.jbh1230.main.Main</mainClass>
+					</manifest>
+				</archive> 
+				-->
+				<descriptorRefs>
+					<descriptorRef>jar-with-dependencies</descriptorRef>
+				</descriptorRefs>
+
+			</configuration>
+		</plugin>
+
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-jar-plugin</artifactId>
+			<configuration>
+				<excludes>
+					<exclude>**/test/</exclude>
+				</excludes>
+			</configuration>
+		</plugin>
+	</plugins>
+</build>
+</project>
