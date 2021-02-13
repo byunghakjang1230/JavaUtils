@@ -1,10 +1,10 @@
-package com.jbh1230.datetime;
+package com.jbh1230.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Time {
+public class DateTimeUtil {
 
 	//기존의 포멧터로 출력된 시간 문자열을 다른 포멧으로 포멧팅하여 출력하려고 할 때.
 	public static String changeTimeFormatToString(String timeStr, String bfFormat, String afFormat) {
@@ -52,5 +52,8 @@ public class Time {
 		return new SimpleDateFormat("hhmmssaa").format(new Date()).toString();
 	}
 	
+	public static Date getNowTime() {
+		return new Date();
+	}
 	
 }

@@ -1,4 +1,4 @@
-package com.jbh1230.file;
+package com.jbh1230.utils;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -11,7 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.Date;
 
-public class FileUtils {
+public class FileUtil {
 
 	/*
 	 * 생성시간 리턴. 속성값 읽어오기 실패 시 최근 수정시간 가져오기.
