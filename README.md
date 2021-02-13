@@ -1,7 +1,11 @@
 # jbh-util
-all Methods are static type
+다양한 유틸함수를 정리.
+본 문서는 아래와 같은 순서로 작성되어 있습니다.
+1. 클래스 및 메서드 리스트.
+2. 메서드 상세 문서.
 
-1. Class and Method List
+클래스 및 메서드 리스트. Class and Method List.
+-----------------------------------------
 ## StringUtil
 > * LPAD
 >   - String lpad(int num, int size)
@@ -40,3 +44,6 @@ all Methods are static type
 > - String getNowTime12HHMMSSAmPm()
 > - Date getNowTime()
 
+메서드 상세 문서. Method Detail Docs.
+-----------------------------------------
+* 업데이트 예정.
