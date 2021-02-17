@@ -27,6 +27,50 @@ public class DateTimeUtil {
 		return new SimpleDateFormat(format).format(date).toString();
 	}
 	
+	public static String getYearToYYYY(Date date) {
+		return new SimpleDateFormat("yyyy").format(date).toString();
+	}
+	
+	public static String getMonthToMM(Date date) {
+		return new SimpleDateFormat("MM").format(date).toString();
+	}
+	
+	public static String getDayToDD(Date date) {
+		return new SimpleDateFormat("dd").format(date).toString();
+	}
+	
+	public static String getHourToHHBy24(Date date) {
+		return new SimpleDateFormat("HH").format(date).toString();
+	}
+	
+	public static String getHourToHHBy12(Date date) {
+		return new SimpleDateFormat("hh").format(date).toString();
+	}
+	
+	public static String getMinuteToMM(Date date) {
+		return new SimpleDateFormat("mm").format(date).toString();
+	}
+	
+	public static String getSecondsToSS(Date date) {
+		return new SimpleDateFormat("ss").format(date).toString();
+	}
+	
+	public static String getMilliSecondToSSS(Date date) {
+		return new SimpleDateFormat("SSS").format(date).toString();
+	}
+	
+	public static String getDateToYYYYMMDD(Date date) {
+		return new SimpleDateFormat("yyyyMMdd").format(date).toString();
+	}
+	
+	public static String getDateToYYYYMM(Date date) {
+		return new SimpleDateFormat("yyyyMM").format(date).toString();
+	}
+	
+	public static String getTimeTo24HHmmss(Date date) {
+		return new SimpleDateFormat("HHmmss").format(date).toString();
+	}
+	
 	/* 특정한 포멧으로 현재 시간을 출력하고자 할 때.
 	 * 상세 참고 : https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
 	 * KK : 12시간 AM/PM(00-11)

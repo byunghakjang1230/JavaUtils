@@ -11,7 +11,7 @@ public enum FileTypeConst {
 	 */
 	AUDIO("AUDIO", Arrays.asList("mp3", "wav", "wma", "ogg", "au", "rm", "mid", "aac", "flac", "gsm", "dct", "m4a", "raw", "amr")),
 	VIDEO("VIDEO", Arrays.asList("avi", "mp4", "mkw", "wmv", "mov", "ts", "tp", "flv", "3gp", "m4v")),
-	IMAGE("IMAGE", Arrays.asList("jpg", "jpeg", "png", "gif", "tif", "tiff", "rle", "dib")),
+	IMAGE("IMAGE", Arrays.asList("jpg", "jpeg", "png", "gif", "tif", "tiff", "rle", "dib", "heic")),
 	EMPTY("EMPTY", Collections.EMPTY_LIST);
 	
 	private String type;

@@ -3,7 +3,7 @@
 <groupId>jbh1230</groupId>
 <artifactId>jbh-util</artifactId>
 <packaging>jar</packaging>
-<version>0.0.1-SNAPSHOT</version>
+<version>0.0.5</version>
 
 <repositories>
 	<repository>
